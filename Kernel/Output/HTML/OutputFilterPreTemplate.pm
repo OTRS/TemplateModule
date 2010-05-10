@@ -2,7 +2,7 @@
 # Kernel/Output/HTML/OutputFilterPreTemplate.pm
 # Copyright (C) 2001-2010 OTRS AG, http://otrs.org/
 # --
-# $Id: OutputFilterPreTemplate.pm,v 1.2 2010-05-10 12:30:44 sb Exp $
+# $Id: OutputFilterPreTemplate.pm,v 1.3 2010-05-10 14:41:23 sb Exp $
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -20,7 +20,7 @@ use Kernel::System::Time;
 use Kernel::System::Ticket;
 
 use vars qw($VERSION);
-$VERSION = qw($Revision: 1.2 $) [1];
+$VERSION = qw($Revision: 1.3 $) [1];
 
 sub new {
     my ( $Type, %Param ) = @_;
@@ -65,7 +65,7 @@ sub Run {
     my $ItemDisplay .= <<'END';
                 <tr valign="top">
                     <td><b>Pre $Text{"Title"}:</b></td>
-                    <td>$Data{"Title"}</td>
+                    <td>$QData{"Title"}</td>
                 </tr>
 END
 

@@ -2,7 +2,7 @@
 # Kernel/Output/HTML/OutputFilterPreTemplate.pm
 # Copyright (C) 2001-2010 OTRS AG, http://otrs.org/
 # --
-# $Id: OutputFilterPreTemplate.pm,v 1.1 2010-05-10 12:06:29 sb Exp $
+# $Id: OutputFilterPreTemplate.pm,v 1.2 2010-05-10 12:30:44 sb Exp $
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -20,7 +20,7 @@ use Kernel::System::Time;
 use Kernel::System::Ticket;
 
 use vars qw($VERSION);
-$VERSION = qw($Revision: 1.1 $) [1];
+$VERSION = qw($Revision: 1.2 $) [1];
 
 sub new {
     my ( $Type, %Param ) = @_;
@@ -72,7 +72,6 @@ END
     # display item
     my $Search = '([ \t]+</table>(?:(?!</table>).)+?<!-- dtl:block:CustomerTable -->)';
     ${ $Param{Data} } =~ s{$Search}{$ItemDisplay$1}ms;
-    print STDERR "$1\n";
 
     return 1;
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_config version="1.0" init="Changes">
+    <CVS>$Id: EventModulePostTemplate.xml,v 1.1 2010-05-10 17:56:20 sb Exp $</CVS>
+    <ConfigItem Name="Ticket::EventModulePost###EventModulePostTemplate" Required="0" Valid="1">
+        <Description Lang="en"></Description>
+        <Description Lang="de"></Description>
+        <Group>EventModulePostTemplate</Group>
+        <SubGroup>EventModule</SubGroup>
+        <Setting>
+            <Hash>
+                <Item Key="Module">Kernel::System::Ticket::Event::EventModulePostTemplate</Item>
+                <Item Key="Event">(ArticleAgentNotification|ArticleAutoResponse|ArticleBounce|ArticleCreate|ArticleCustomerNotification|ArticleFlagDelete|ArticleFlagSet|ArticleFreeTextUpdate|ArticleSend|ArticleUpdate|HistoryAdd|HistoryDelete|TicketAccountTime|TicketCreate|TicketCustomerUpdate|TicketDelete|TicketFreeTextUpdate|TicketFreeTimeUpdate|TicketLockUpdate|TicketMerge|TicketOwnerUpdate|TicketPendingTimeUpdate|TicketPriorityUpdate|TicketQueueUpdate|TicketResponsibleUpdate|TicketServiceUpdate|TicketSLAUpdate|TicketStateUpdate|TicketTitleUpdate|TicketTypeUpdate|TicketUnlockTimeoutUpdate)</Item>
+            </Hash>
+        </Setting>
+    </ConfigItem>
+</otrs_config>

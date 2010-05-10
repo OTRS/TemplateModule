@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_config version="1.0" init="Changes">
-    <CVS>$Id: OutputFilterContentTemplate.xml,v 1.1 2010-05-10 12:30:44 sb Exp $</CVS>
+    <CVS>$Id: OutputFilterContentTemplate.xml,v 1.2 2010-05-10 14:14:45 sb Exp $</CVS>
     <ConfigItem Name="Frontend::Output::FilterContent###OutputFilterContentTemplate" Required="0" Valid="1">
-        <Description Lang="en">Output content-filter to modify text items.</Description>
-        <Description Lang="de">Output Content-Filter zum Verändern von Textstücken.</Description>
+        <Description Lang="en">Output content-filter to modify all &lt;td&gt; elements.</Description>
+        <Description Lang="de">Output Content-Filter zum Verändern aller &lt;td&gt;-Elemente.</Description>
         <Group>OutputFilterContentTemplate</Group>
         <SubGroup>OutputFilter</SubGroup>
         <Setting>

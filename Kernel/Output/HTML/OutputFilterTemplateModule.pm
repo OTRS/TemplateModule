@@ -1,12 +1,12 @@
 # --
 # Kernel/Output/HTML/OutputFilterTemplateModule.pm
-# Copyright (C) 2001-2008 OTRS AG, http://otrs.org/
+# Copyright (C) 2001-2010 OTRS AG, http://otrs.org/
 # --
-# $Id: OutputFilterTemplateModule.pm,v 1.1.1.1 2008-09-22 13:19:20 mh Exp $
+# $Id: OutputFilterTemplateModule.pm,v 1.2 2010-05-24 09:54:03 bes Exp $
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
-# the enclosed file COPYING for license information (GPL). If you
-# did not receive this file, see http://www.gnu.org/licenses/gpl-2.0.txt.
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see L<http://www.gnu.org/licenses/agpl.txt>.
 # --
 
 package Kernel::Output::HTML::OutputFilterTemplateModule;
@@ -15,7 +15,7 @@ use strict;
 use warnings;
 
 use vars qw($VERSION);
-$VERSION = qw($Revision: 1.1.1.1 $) [1];
+$VERSION = qw($Revision: 1.2 $) [1];
 
 sub new {
     my ( $Type, %Param ) = @_;
@@ -25,20 +25,23 @@ sub new {
     bless( $Self, $Type );
 
     # get needed objects
-    for my $Object (qw(ConfigObject MainObject LogObject LayoutObject Debug)) {
-        $Self->{$Object} = $Param{$Object} || die "Got no $Object!";
+    for my $Needed (
+        qw(ConfigObject Debug EncodeObject LayoutObject LogObject MainObject ParamObject TimeObject )
+        )
+    {
+        $Self->{$Needed} = $Param{$Needed} || die "Got no $Object!" );
     }
 
     return $Self;
 }
 
 sub Run {
-    my ( $Self, %Param ) = @_;
+        my ( $Self, %Param ) = @_;
 
-    #$Param{Data}
-    #$Param{TemplateFile}
+        #$Param{Data}
+        #$Param{TemplateFile}
 
-    return;
+        return;
 }
 
 1;

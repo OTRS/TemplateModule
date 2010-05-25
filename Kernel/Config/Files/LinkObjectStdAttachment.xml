@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<otrs_config version="1.0" init="Config">
+    <CVS>$Id: LinkObjectStdAttachment.xml,v 1.1 2010-05-25 08:42:57 bes Exp $</CVS>
+    <ConfigItem Name="LinkObject::PossibleLink###4000" Required="0" Valid="1">
+        <Description Lang="en">This setting defines that a 'Ticket' object can be linked with 'StdAttachment' objects using the 'Normal' link type.</Description>
+        <Description Lang="de">Definiert, dass ein 'Ticket'-Objekt mit dem Linktyp 'Normal' mit 'StdAttachment'-Objekten verlinkt werden kann.</Description>
+        <Group>Framework</Group>
+        <SubGroup>Core::LinkObject</SubGroup>
+        <Setting>
+            <Hash>
+                <Item Key="Object1">Ticket</Item>
+                <Item Key="Object2">StdAttachment</Item>
+                <Item Key="Type">Normal</Item>
+            </Hash>
+        </Setting>
+    </ConfigItem>
+</otrs_config>

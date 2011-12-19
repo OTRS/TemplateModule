@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
-<!-- $Id: TemplateModule.xml,v 1.1 2011-12-19 14:31:08 cr Exp $ -->
+<!-- $Id: TemplateModule.xml,v 1.2 2011-12-19 14:53:49 mg Exp $ -->
 
 <book lang='en'>
 
@@ -28,8 +28,7 @@
     <title>Preface</title>
     <para>This package includes ...</para>
     <para>
-        For questions concerning this document, please contact support (support@otrs.com) for more
-         Information.
+        For questions concerning this document, please contact support (support@otrs.com) for more information.
     </para>
 </preface>
 
@@ -89,15 +88,13 @@
     <title>Installation</title>
     <para>
         The following instructions show how to install the package. There are basically two
-        options. Either through the admin interface or via the command line.
+        options: either through the admin interface or via the command line.
     </para>
     <sect1>
         <title>Admin Interface</title>
         <para>
-            the package can be installed, or if necessary, updated or uninstalled, using the
-            following URL through the admin interface (make sure that the user is in admin group).
-        </para>
-        <para>
+            The package can be installed, updated or uninstalled using the
+            following URL through the admin interface (make sure that the user is in the admin group):
             <ulink url="http://localhost/otrs/index.pl?Action=AdminPackageManager">
                 http://localhost/otrs/index.pl?Action=AdminPackageManager
             </ulink>
@@ -107,7 +104,7 @@
         <title>Command Line</title>
         <para>
             If it is not possible to use the admin interface, the following command line tool
-            ("/bin otrs.PackageManager.pl") can be used.
+            ("/bin/otrs.PackageManager.pl") can be used.
         </para>
         <para>
             <screen>
@@ -120,8 +117,8 @@
 <chapter>
     <title>Configuration</title>
     <para>
-         The configuration of the module can be made easily via the sysconfig in the admin
-         interface. The following configuration options are available for this.
+         The module can be configured via the sysconfig in the admin
+         interface. The following configuration options are available:
     </para>
     <sect1>
         <title>ConfigParam1</title>
@@ -208,7 +205,7 @@
 </chapter>
 
 <chapter>
-    <title>List of changes</title>
+    <title>List of Changes</title>
     <para>
         $ChangeLog
     </para>

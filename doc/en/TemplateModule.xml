@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
+<!-- $Id: TemplateModule.xml,v 1.1 2011-12-19 14:31:08 cr Exp $ -->
+
+<book lang='en'>
+
+
+<bookinfo>
+<title>$Name</title>
+<edition>$Description Version $Version</edition>
+
+<copyright>
+<year>$YearStamp</year>
+<holder>$Vendor, $URL</holder>
+</copyright>
+
+<date>$DateStamp</date>
+
+<legalnotice>
+    <para>$License</para>
+    <para>This work is copyrighted by $Vendor, Norsk-Data-Str. 1, 61352 Bad Homburg, Germany.</para>
+    <para>Build Date: $DateStamp</para>
+</legalnotice>
+
+</bookinfo>
+
+<preface id="preface" >
+    <title>Preface</title>
+    <para>This package includes ...</para>
+    <para>
+        For questions concerning this document, please contact support (support@otrs.com) for more
+         Information.
+    </para>
+</preface>
+
+<chapter>
+    <title>Feature List</title>
+    <sect1>
+        <title>Feature 1</title>
+        <para>This feature allows ...</para>
+    </sect1>
+    <sect1>
+        <title>Feature 2</title>
+        <para>This feature allows ...</para>
+    </sect1>
+    <sect1>
+        <title>Feature 3</title>
+        <para>This feature allows ...</para>
+    </sect1>
+</chapter>
+
+<chapter>
+    <title>System Requirements</title>
+    <sect1>
+        <title>Framework</title>
+        <para>The following OTRS Framework is required:</para>
+        <para>
+            $Framework
+        </para>
+    </sect1>
+    <sect1>
+        <title>Packages</title>
+        <para>The following packages are required:</para>
+        <para>
+            $PackageRequired
+        </para>
+    </sect1>
+    <sect1>
+        <title>Operating System</title>
+        <para>The package can be used with the following operating systems:</para>
+        <para>
+            $OS
+        </para>
+    </sect1>
+    <sect1>
+        <title>Third Party Software</title>
+        <para>The following software is required for the operation of the package:</para>
+        <para>
+            <itemizedlist>
+                <listitem>
+                    <para>None</para>
+                </listitem>
+            </itemizedlist>
+        </para>
+    </sect1>
+</chapter>
+
+<chapter>
+    <title>Installation</title>
+    <para>
+        The following instructions show how to install the package. There are basically two
+        options. Either through the admin interface or via the command line.
+    </para>
+    <sect1>
+        <title>Admin Interface</title>
+        <para>
+            the package can be installed, or if necessary, updated or uninstalled, using the
+            following URL through the admin interface (make sure that the user is in admin group).
+        </para>
+        <para>
+            <ulink url="http://localhost/otrs/index.pl?Action=AdminPackageManager">
+                http://localhost/otrs/index.pl?Action=AdminPackageManager
+            </ulink>
+        </para>
+    </sect1>
+    <sect1>
+        <title>Command Line</title>
+        <para>
+            If it is not possible to use the admin interface, the following command line tool
+            ("/bin otrs.PackageManager.pl") can be used.
+        </para>
+        <para>
+            <screen>
+                shell> bin/otrs.PackageManager.pl -a install -p /path/to/$Name-$Version.opm
+            </screen>
+        </para>
+    </sect1>
+</chapter>
+
+<chapter>
+    <title>Configuration</title>
+    <para>
+         The configuration of the module can be made easily via the sysconfig in the admin
+         interface. The following configuration options are available for this.
+    </para>
+    <sect1>
+        <title>ConfigParam1</title>
+        <para>Group: Ticket, Subgroup: Core</para>
+        <para>In this configuration option ...</para>
+    </sect1>
+    <sect1>
+        <title>ConfigParam2</title>
+        <para>Group: Ticket, Subgroup: Core</para>
+        <para>In this configuration option ...</para>
+    </sect1>
+</chapter>
+
+<chapter>
+    <title>Unit Test</title>
+    <para>
+        To ensure the quality of the module, several so-called unit tests were created, to test
+        the functionalities of this module. These unit tests can be run via command line.
+    </para>
+    <para>
+        ATTENTION: Please never run unit tests on a productive system, since the added test data
+        to the system will no longer be removed. Always use a test system.
+    </para>
+    <sect1>
+        <title>Run the package specific unit tests</title>
+        <para>
+            To run only the unit test which will be delivered with this package, use the following
+            command on the command line:
+        </para>
+        <para>
+            <screen>
+                shell> perl bin/otrs.UnitTest.pl -n $Name
+            </screen>
+        </para>
+    </sect1>
+    <sect1>
+        <title>Run all available unit tests</title>
+        <para>
+            To run all available unit tests, use the following command on the command line:
+        </para>
+        <para>
+            <screen>
+                shell> perl bin/otrs.UnitTest.pl
+            </screen>
+        </para>
+    </sect1>
+</chapter>
+
+<chapter>
+    <title>Contact</title>
+    <para>Persons involved in the the implementation of the package.</para>
+    <sect1>
+        <title>XXXXX</title>
+        <para>
+            Accounting: XXX, Phone +49 (0) XXX
+        </para>
+        <para>
+            Technical: XXX, Phone +49 (0) XXX
+        </para>
+    </sect1>
+    <sect1>
+        <title>OTRS AG</title>
+        <para>
+            Accounting: Rene Bakker &lt;sales@otrs.com&gt;, Phone +49 (0)6172 681988 0
+        </para>
+        <para>
+            Technical: Manuel Hecht &lt;dev-support@otrs.com&gt;, Phone +49 (0)6172 681988 0
+        </para>
+    </sect1>
+</chapter>
+
+<chapter>
+    <title>Manifest</title>
+    <para>
+        This Manifest lists all files (with filename and file permissions) which are included in
+        the package.
+    </para>
+    <sect1>
+        <title>File List</title>
+        <para>
+            $Filelist
+        </para>
+    </sect1>
+</chapter>
+
+<chapter>
+    <title>List of changes</title>
+    <para>
+        $ChangeLog
+    </para>
+</chapter>
+
+</book>

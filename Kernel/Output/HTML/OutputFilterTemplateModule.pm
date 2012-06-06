@@ -1,8 +1,8 @@
 # --
 # Kernel/Output/HTML/OutputFilterTemplateModule.pm
-# Copyright (C) 2001-2010 OTRS AG, http://otrs.org/
+# Copyright (C) 2001-2012 OTRS AG, http://otrs.org/
 # --
-# $Id: OutputFilterTemplateModule.pm,v 1.2 2010-05-24 09:54:03 bes Exp $
+# $Id: OutputFilterTemplateModule.pm,v 1.3 2012-06-06 11:10:02 mb Exp $
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -15,7 +15,7 @@ use strict;
 use warnings;
 
 use vars qw($VERSION);
-$VERSION = qw($Revision: 1.2 $) [1];
+$VERSION = qw($Revision: 1.3 $) [1];
 
 sub new {
     my ( $Type, %Param ) = @_;
@@ -25,23 +25,23 @@ sub new {
     bless( $Self, $Type );
 
     # get needed objects
-    for my $Needed (
+    for my $Object (
         qw(ConfigObject Debug EncodeObject LayoutObject LogObject MainObject ParamObject TimeObject )
         )
     {
-        $Self->{$Needed} = $Param{$Needed} || die "Got no $Object!" );
+        $Self->{$Object} = $Param{$Object} || die "Got no $Object!";
     }
 
     return $Self;
 }
 
 sub Run {
-        my ( $Self, %Param ) = @_;
+    my ( $Self, %Param ) = @_;
 
-        #$Param{Data}
-        #$Param{TemplateFile}
+    #$Param{Data}
+    #$Param{TemplateFile}
 
-        return;
+    return;
 }
 
 1;

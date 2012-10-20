@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
-<!-- $Id: TemplateModule.xml,v 1.1.1.1 2008-09-22 13:19:20 mh Exp $ -->
+<!-- $Id: TemplateModule.xml,v 1.2 2012-10-20 15:07:25 ep Exp $ -->
 
 <book lang='de'>
 
@@ -105,11 +105,11 @@
         <title>Kommandozeile</title>
         <para>
             Ist es nicht möglich das Admin-Interface zu benutzen, kann das folgendes
-            Kommandozeilen-Tool ("bin/opm.pl") benutzt werden.
+            Kommandozeilen-Tool ("bin/otrs.PackageManager.pl") benutzt werden.
         </para>
         <para>
             <screen>
-                shell> bin/opm.pl -a install -p /path/to/$Name-$Version.opm
+                shell> bin/otrs.PackageManager.pl -a install -p /path/to/$Name-$Version.opm
             </screen>
         </para>
     </sect1>

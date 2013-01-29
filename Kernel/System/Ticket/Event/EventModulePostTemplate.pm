@@ -1,8 +1,8 @@
 # --
 # Kernel/System/Ticket/Event/EventModulePostTemplate.pm - event module
-# Copyright (C) 2001-2010 OTRS AG, http://otrs.org/
+# Copyright (C) 2001-2013 OTRS AG, http://otrs.org/
 # --
-# $Id: EventModulePostTemplate.pm,v 1.1 2010-05-10 17:56:20 sb Exp $
+# $Id: EventModulePostTemplate.pm,v 1.2 2013-01-29 09:40:12 mb Exp $
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -15,7 +15,7 @@ use strict;
 use warnings;
 
 use vars qw($VERSION);
-$VERSION = qw($Revision: 1.1 $) [1];
+$VERSION = qw($Revision: 1.2 $) [1];
 
 sub new {
     my ( $Type, %Param ) = @_;
@@ -44,7 +44,7 @@ sub Run {
     my ( $Self, %Param ) = @_;
 
     # check needed stuff
-    for (qw(TicketID Event Config)) {
+    for (qw(Data Event Config)) {
         if ( !$Param{$_} ) {
             $Self->{LogObject}->Log( Priority => 'error', Message => "Need $_!" );
             return;
@@ -54,7 +54,7 @@ sub Run {
     return 1 if $Param{Event} ne 'TicketCreate';
 
     my %Ticket = $Self->{TicketObject}->TicketGet(
-        TicketID => $Param{TicketID},
+        TicketID => $Param{Data}->{TicketID},
         UserID   => 1,
     );
     return 1 if !%Ticket;
@@ -62,7 +62,7 @@ sub Run {
 
     # do some stuff
     $Self->{TicketObject}->HistoryAdd(
-        TicketID     => $Param{TicketID},
+        TicketID     => $Param{Data}->{TicketID},
         CreateUserID => 1,
         HistoryType  => 'Misc',
         Name         => 'New ticket with state other than Open!',

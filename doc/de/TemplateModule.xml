@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN"
     "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
-<!-- $Id: TemplateModule.xml,v 1.4 2013-03-13 12:13:24 te Exp $ -->
+<!-- $Id: TemplateModule.xml,v 1.5 2013-03-13 13:50:41 te Exp $ -->
 
 <book lang='de'>
 
@@ -577,30 +577,32 @@
              If the packet contains no "core files", this point 9.2 can be removed.
         -->
         <para>
-            To ensure the quality of the module, several so-called unit tests were created, to test
-            the functionalities of this module. These unit tests can be run via command line.
+            Um die Quallität dieses Moduls zu gewährleisten wurden mehrere so genannter 'UnitTests' erstellt.
+            Diese UnitTests prüfen die Funktionalitäten dieses Moduls auf der Basis von verschiedenen definierten
+            Testfällen. Diese UnitTests können über die Kommandozeile gestartet werden.
         </para>
         <para>
-            ATTENTION: Please never run unit tests on a productive system, since the added test
-            data to the system will no longer be removed. Always use a test system.
+            ACHTUNG: Bitte starten Sie UnitTests nie auf einem Produktivsystem. Dem System hinzugefügten
+            Testdaten werden unter umständen nicht gelöscht. Bitte benutzen Sie daher immer ein Testsystem
+            zum ausführen der UnitTests.
         </para>
         <para>
-            Run the package specific unit tests
+            Ausführen der paketspezifischen UnitTests
         </para>
         <para>
-            To run only the unit test which will be delivered with this package, use the following
-            command on the command line:
+            Um nur die UnitTest auszuführen die mit diesem Paket ausgeliefert werden, verwenden Sie folgenden Befehl auf
+            der Kommandozeile:
         </para>
         <para>
             <screen>
-                shell> perl bin/otrs.UnitTest.pl -n DynamicTicketTemplate
+                shell> perl bin/UnitTest.pl -n $Name
             </screen>
         </para>
         <para>
-            Run all available unit tests
+            Ausführen aller verfügbaren UnitTests
         </para>
         <para>
-            To run all available unit tests, use the following command on the command line:
+            Um alle verfügbaren UnitTest auszuführen, verwenden Sie folgenden Befehl auf der Kommandozeile:
         </para>
         <para>
             <screen>

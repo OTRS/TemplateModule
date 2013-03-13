@@ -1,9 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
-<!-- $Id: TemplateModule.xml,v 1.3 2012-04-20 00:18:56 ep Exp $ -->
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN"
+    "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
+<!-- $Id: TemplateModule.xml,v 1.4 2013-03-13 12:13:25 te Exp $ -->
 
 <book lang='en'>
 
+<!-- ************************************** Head *********************************************** -->
 
 <bookinfo>
 <title>$Name</title>
@@ -24,60 +26,137 @@
 
 </bookinfo>
 
+<!-- ************************************ Customer part ****************************************** -->
+
 <preface id="preface" >
+    <!-- ********** -->
+    <!-- 1. Preface -->
+    <!-- ********** -->
     <title>Preface</title>
-    <para>This package includes ...</para>
+    <!--
+         A short overview for this modul clearly explained to customers!!!
+         e.g. Provides an additional button to also insert FAQ richtext incl. inlines + attachments into tickets.
+    -->
     <para>
-        For questions concerning this document, please contact support (support@otrs.com) for more information.
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.
+    </para>
+    <para>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua.  At vero eos et accusam et justo duo
+        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+        dolor sit amet.
+    </para>
+    <para>
+        If you have questions regarding this package, please contact your support team
+        (support@otrs.com) for more information.
     </para>
 </preface>
 
 <chapter>
+    <!-- *************** -->
+    <!-- 2. Feature List -->
+    <!-- *************** -->
     <title>Feature List</title>
+    <!--
+        List of all functions declared at the functional level
+         -   minimum in 4 sentences
+         -   customer-specific
+         -   possible screenshots
+         -   no OTRS terminology like TicketEventModul, PreApplicationModul
+    -->
     <sect1>
-        <title>Feature 1</title>
-        <para>This feature allows ...</para>
-    </sect1>
-    <sect1>
-        <title>Feature 2</title>
-        <para>This feature allows ...</para>
-    </sect1>
-    <sect1>
-        <title>Feature 3</title>
-        <para>This feature allows ...</para>
-    </sect1>
-</chapter>
-
-<chapter>
-    <title>System Requirements</title>
-    <sect1>
-        <title>Framework</title>
-        <para>The following OTRS Framework is required:</para>
+        <title>Lorem ipsum dolor sit amet</title>
         <para>
-            $Framework
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                ut labore et dolore magna aliquyam erat, sed diam voluptua.  At vero eos et accusam et justo duo
+                dolores et ea rebum.
         </para>
-    </sect1>
-    <sect1>
-        <title>Packages</title>
-        <para>The following packages are required:</para>
         <para>
-            $PackageRequired
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.
         </para>
-    </sect1>
-    <sect1>
-        <title>Operating System</title>
-        <para>The package can be used with the following operating systems:</para>
         <para>
-            $OS
-        </para>
-    </sect1>
-    <sect1>
-        <title>Third Party Software</title>
-        <para>The following software is required for the operation of the package:</para>
-        <para>
-            <itemizedlist>
+            <itemizedlist mark="round">
                 <listitem>
-                    <para>None</para>
+                    <para>
+                        Agent Interface:
+                    </para>
+                    <itemizedlist mark="round">
+                        <listitem>
+                            <para>
+                                New Phone Ticket
+                            </para>
+                        </listitem>
+                        <listitem>
+                            <para>
+                                New Email Ticket
+                            </para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>
+                        Customer Interface:
+                    </para>
+                    <itemizedlist mark="round">
+                        <listitem>
+                            <para>
+                                New Ticket
+                            </para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+            </itemizedlist>
+        </para>
+    </sect1>
+    <sect1>
+        <title>Dynamic Ticket Templates</title>
+        <para>
+            This feature speed up the creation of new tickets by setting pre-defined texts for
+            subject and body, and the selection of the Dynamic Fields to be shown and which ones
+            should be marked as required.
+        </para>
+        <para>
+            In the customer interface the templates can also pre-fill the Ticket Type and Service by
+            activating the CustomerGroup setting (explained in the following sections).
+        </para>
+        <para>
+            This feature can work cooperatively with OTRSTicketWorkflow or OTRSTicketWorkflowITSM
+            Feature Add-on packages by integrating defined Ticket Workflows into a template and
+            trigger them automatically when the ticket is created.
+        </para>
+        <para>
+            The screens where is feature is available are:
+        </para>
+        <para>
+            <itemizedlist mark="round">
+                <listitem>
+                    <para>
+                        Agent Interface:
+                    </para>
+                    <itemizedlist mark="round">
+                        <listitem>
+                            <para>
+                                New Phone Ticket
+                            </para>
+                        </listitem>
+                        <listitem>
+                            <para>
+                                New Email Ticket
+                            </para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>
+                        Customer Interface:
+                    </para>
+                    <itemizedlist mark="round">
+                        <listitem>
+                            <para>
+                                New Ticket
+                            </para>
+                        </listitem>
+                    </itemizedlist>
                 </listitem>
             </itemizedlist>
         </para>
@@ -85,16 +164,55 @@
 </chapter>
 
 <chapter>
+    <!-- ******************** -->
+    <!-- 3. System Reqirements -->
+    <!-- ******************** -->
+    <title>System Requirements</title>
+    <sect1>
+        <title>Framework</title>
+        <para>The following OTRS framework is required:</para>
+        <para>
+        $Framework
+        </para>
+    </sect1>
+    <sect1>
+        <title>Packages</title>
+        <para>The following packages are required:</para>
+        <para>
+        $PackageRequired
+        </para>
+    </sect1>
+    <sect1>
+        <title>Operating System</title>
+        <para>This package requires one of the following operating systems:</para>
+        <para>
+        $OS
+        </para>
+    </sect1>
+    <sect1>
+        <title>Third Party Software</title>
+        <para>This third party software is required to use this package:</para>
+        <para>
+            <itemizedlist>
+                <listitem><para>None.</para></listitem>
+            </itemizedlist>
+        </para>
+    </sect1>
+</chapter>
+
+<chapter>
+    <!-- *************** -->
+    <!-- 4. Installation -->
+    <!-- *************** -->
     <title>Installation</title>
-    <para>
-        The following instructions show how to install the package. There are basically two
-        options: either through the admin interface or via the command line.
-    </para>
+    <para>The following instructions explain how to install the package.</para>
     <sect1>
         <title>Admin Interface</title>
         <para>
-            The package can be installed, updated or uninstalled using the
-            following URL through the admin interface (make sure that the user is in the admin group):
+            Please use the following URL to install the package utilizing the admin
+            interface (please note that you need to be in the admin group).
+        </para>
+        <para>
             <ulink url="http://localhost/otrs/index.pl?Action=AdminPackageManager">
                 http://localhost/otrs/index.pl?Action=AdminPackageManager
             </ulink>
@@ -103,59 +221,342 @@
     <sect1>
         <title>Command Line</title>
         <para>
-            If it is not possible to use the admin interface, the following command line tool
-            ("bin/otrs.PackageManager.pl") can be used.
+            Whenever you cannot use the Admin Interface for whatever reason,
+            you may use the following command line tool (&quot;bin/otrs.PackageManager.pl&quot;)
+            instead.
+        </para>
+        <para>
+        <screen>
+            shell> bin/otrs.PackageManager.pl  -a install -p /path/to/$Name-$Version.opm
+        </screen>
+        </para>
+    </sect1>
+</chapter>
+
+<chapter>
+    <!-- **************** -->
+    <!-- 5. Configuration -->
+    <!-- **************** -->
+    <!-- You can build this chapter by running module-tools/Config2Docbook.pl -->
+    <title>Configuration</title>
+    <para>
+        The following list of configuration options can be changed for this package.
+        The rest of the settings found in SysConfig -> OTRSTicketMaskExtensions and SysConfig ->
+        OTRSDynamicTicketTemplates are required configurations that must not be changed.
+    </para>
+    <!--
+        List of all added, modified or removed config options in the package.
+        e.g.: Frontend::Module###AgentTicketWorkflow Group: Ticket, Subgroup: Frontend::Agent::ModuleRegistration)
+        Description text must be identical with sysconfig description and clearly explained to customers.
+    -->
+    <sect1>
+        <title>Ticket::DynamicTicketTemplate</title>
+        <para>Group: OTRSDynamicTicketTemplates, Subgroup: Core</para>
+        <para>
+            Allows the use of Dynamic Ticket Templates in Ticket creation screens.
+        </para>
+    </sect1>
+    <sect1>
+        <title>Ticket::DynamicTicketTemplate::CustomerGroup</title>
+        <para> Group: OTRSDynamicTicketTemplates, Subgroup: Core</para>
+        <para>
+            Allows to assign Dynamic Ticket Templates to Customer Groups.
+        </para>
+    </sect1>
+    <sect1>
+        <title>Ticket::DynamicTicketTemplate::CustomerGroup::Notify</title>
+        <para> Group: OTRSDynamicTicketTemplates, Subgroup: Core</para>
+        <para>
+            Notifies Agents when a Customer creates a Ticket but doesn't have a Dynamic Ticket
+            Template assigned.
+        </para>
+        <para>
+            Note... The notification subject and text can be changed under "Admin" -&gt; "Agent
+            Notifications" -&gt; "Agent::MissingCustomerGroupDTTAssignment".
+        </para>
+    </sect1>
+</chapter>
+
+<chapter>
+    <!-- ******** -->
+    <!-- 6. Usage -->
+    <!-- ******** -->
+    <title>Usage</title>
+    <!--
+        Create for every "possible" use case a step by step list clearly explained to customers. Screenshots desirable-
+        e.g.
+        1.  Choose new phone ticket frontend ?
+        2.  Fillup required data (subject)
+        3.  Submit the data (have a look at screenshot)
+        ...
+    -->
+    <sect1>
+        <title>Post Installation Notes</title>
+        <para>
+            If the system where this package is installed uses mod_perl it is necessary to restart the
+            web server in order to let mod_perl refresh the files and get the updates from this
+            package.
+        </para>
+        <para>
+            The use of custom themes could prevent the correct behavior of this package. If custom
+            themes are used make sure that the Dynamic Fields for at least AgentTicketPhone,
+            AgentTicketEmail and CustomerTicketMessage screens are contained into a single DTL
+            block like the following:
+        </para>
+        <para>
+            <programlisting><![CDATA[
+<!-- dtl:block:DynamicField -->
+                    <div class="Row Row_DynamicField_$QData{"Name"}">
+                        $Data{"Label"}
+                        <div class="Field">
+                            $Data{"Field"}
+                        </div>
+                        <div class="Clear"></div>
+                    </div>
+<!-- dtl:block:DynamicField -->
+            ]]></programlisting>
+        </para>
+        <para>
+            Any change in this DTL blocks could affect the package behavior.
+        </para>
+    </sect1>
+
+    <sect1>
+        <title>ACL based visibility of Dynamic Fields</title>
+        <para>
+            For this example we are mainly using the example Dropdown DynamicFields "Brand" as well
+            as "VWModel".
+        </para>
+        <para>
+            Both fields needs to activated in the Dynamic Fields setting for each screen in the
+            sysconfig for example:
         </para>
         <para>
             <screen>
-                shell> bin/otrs.PackageManager.pl -a install -p /path/to/$Name-$Version.opm
+        Ticket::Frontend::AgentTicketPhone###DynamicField:
+
+        Key                     Content
+
+        Brand                     1
+        VWModel                   1
+        VWProductionFacility      1
+        PeugeotModel              1
+        PeugeotProductionFacility 1
+        Accessories               1
+        Fuel                      1
+        Remarks                   1
+        RegistationDate           1
+        InvoiceDate               1
+            </screen>
+        </para>
+        <para>
+            "Brand" stands for car manufacturer, and contains the following values:
+        </para>
+        <para>
+            <screen>
+        1: VW
+        2: Peugeot
+            </screen>
+        </para>
+        <para>"VWModel" holds a list of VW Models:</para>
+        <para>
+            <screen>
+        1: Up
+        2: Polo
+        3: Golf
+        4: T5
+            </screen>
+        </para>
+        <para>Goal:</para>
+        <para>
+            <itemizedlist>
+                <listitem>
+                    <para>
+                        Step 1: If we select Brand "VW", all Dynamic Fields should be hidden and
+                        just "VWModel" is displayed.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        Step 2: If we select VWModel "Up" all Dynamic Fields should be displayed
+                        except for the fields "PeugeotModel" and "PeugeotProductionFacility".
+                    </para>
+                </listitem>
+            </itemizedlist>
+        </para>
+        <para>
+            In the following listing you can see the ACL rules for the above example.
+        </para>
+        <para>
+            Note... You can copy and paste this ACL rules into your Config.pm file to follow the
+            example. But remember to delete or comment them if you will not use them anymore.
+        </para>
+        <para>Detailed explanation:</para>
+        <para>
+            <screen>
+        DynamicField_Brand => [1]
+            </screen>
+        </para>
+        <para>
+            The condition for this ACL rule. If "DanymicField_Brand" Key 1 is selected, the rule
+            will come into action. The Array contains the used PossibleValues keys found in your
+            database inside the dynamic_field table in column "config". In this example it's a
+            Dynamic Field of type "Dropdown".
+        </para>
+        <para>
+            <screen>
+        Form => {
+            </screen>
+        </para>
+        <para>
+            This Package introduces the "Form" key as new option in the "Possible" ACL Hash.
+            "Form" holds the configuration for the visibility of Dynamic Fields.
+        </para>
+        <para>
+            <screen>
+        VWModel => 1,...
+            </screen>
+        </para>
+        <para>
+            These shows the Dynamic Fields that should be visible / invisible. (1 = visible,
+            0 = invisible). In this example the DynamicFields VWModel as well as
+            VWProductionFacility are visible. All other Dynamic Fields will be hidden
+            (PeugeotModel, PeugeotProductionFacility,...).
+        </para>
+        <para>
+            <screen>
+        $Self->{TicketAcl}->{'ACL-VW-Up'}
+            </screen>
+        </para>
+        <para>The second ACL Rule</para>
+        <para>
+                <screen>
+        DynamicField_Brand => [1],
+        DynamicField_VWModel => [1]
+                </screen>
+        </para>
+        <para>
+            In this example two conditions should be met DynamicField_Brand has to be 1 and
+            DynamicField_VWModel has to be 1 too. for this rule to come into action. E.g. it will
+            be triggered if user selects Brand "VW" AND VWModel "Up".
+        </para>
+        <para>
+            <screen>
+        VWModel => 1,...
             </screen>
         </para>
     </sect1>
 </chapter>
 
+<!-- ***************************************** Technical part ************************************ -->
+
 <chapter>
-    <title>Configuration</title>
+    <!-- ********************************* -->
+    <!-- 7. Technical Implematation Detail -->
+    <!-- ********************************* -->
+    <title>Technical Implementation Details</title>
+    <!--
+        Describe the technical structure of the module and the technical functioning out of a developer's perspective.
+            -   Which module layers are used where/as?
+            -   What are the technical features of it?
+        You can split the technical part into a customer part shown in the doku
+        and a hidden part shown in the code.
+    -->
     <para>
-         The module can be configured via the sysconfig in the admin
-         interface. The following configuration options are available:
+        This module uses customized versions of the frontend perl modules AgentTicketActionCommon,
+        AgentTicketEmail, AgentTicketPhone, AgentTicketPhoneCommon and CustomerTicketMessage,
+        this files are located in Custom/Kernel/Modules and are prepared to support ITSM modules and
+        OTRSTicketWorkflow or OTRSTicketWorkflow modules if detected trough particular "Sysconfig"
+        settings.
     </para>
-    <sect1>
-        <title>ConfigParam1</title>
-        <para>Group: Ticket, Subgroup: Core</para>
-        <para>In this configuration option ...</para>
-    </sect1>
-    <sect1>
-        <title>ConfigParam2</title>
-        <para>Group: Ticket, Subgroup: Core</para>
-        <para>In this configuration option ...</para>
-    </sect1>
+    <para>
+        There are two Output Filters that modifies the Agent and Customer screens to provide the
+        required enhancements on the fly (without the need of modify the .dtl files).
+    </para>
+    <!--
+            OK, so far for the users and now for the developers underneath us:
+            Functionality:
+            3 Main Parts:
+        1. Extension for Ticket.pm's TicketAcl sub (Kernel/System/Ticket/OTRSTIcketMaskExtensions.pm):
+            Here the ObjectVariable "TicketAclFormData" gets populated after an ACL check, holding the 1 and 0 configs as configured in the ACL rule that was triggered.
+        2. Custom/Kernel/Modules/AgentTicket ActionCommon/Email/Phone/PhoneCommon .pm
+            In every .pm where we do the acl checks on dynamic fields, fetch Ticket.pm's new "TicketAclFormData" result and render dynamic field's HTML.
+            For Invisible DynamicFields, they get rendered too but as empty div's.
+        3. var/httpd/htdocs/js/Core.AJAX.OTRSTIcketMaskExtensions.js
+            Here the main work happens. After changing Ajax updateable fields,
+            the Perl backend gets called, returns a list of to be displayed dynamicfields as well as their html code.
+            A loop through the DynamicFields populates the empty divs that should get shown by newly triggered ACL rules
+            as well as now to be hidden DynamicFields's divs content gets deleted.
+
+            1 small side Part:
+        To get emptyDiv's we need the Kernel/Output/HTML/OutputFilterPreOTRSTicketMaskExtensions.pm to regex in the following new dtl block:
+        dtl:block:ContentDynamicField
+        inside the standard otrs 3.1 block:
+        dtl:block:DynamicField
+
+        this way the Custom/kernel/Module/Agent....pm's can render the dtl:block:ContentDynamicField only if they concerning DynamicField
+        should be visible.
+
+            Big thx to:
+            - Martin Gruner for thinking through the whole thing with me
+            - Carlos Rodriguez for the implementation of the huge framework side necessities to make this module possible
+        -->
 </chapter>
 
 <chapter>
-    <title>Unit Test</title>
+    <!-- *********** -->
+    <!-- 8. Filelist -->
+    <!-- *********** -->
+    <title>Filelist</title>
+    <!-- Standard text. Don't change this -->
+    <para>This list shows all included files and the referring permissions.</para>
     <para>
-        To ensure the quality of the module, several so-called unit tests were created, to test
-        the functionalities of this module. These unit tests can be run via command line.
+       $Filelist
     </para>
-    <para>
-        ATTENTION: Please never run unit tests on a productive system, since the added test data
-        to the system will no longer be removed. Always use a test system.
-    </para>
+</chapter>
+
+<chapter>
+    <!-- ******* -->
+    <!-- 9. Test -->
+    <!-- ******* -->
+    <title>Tests</title>
+    <para>This module has been tested on the current state of the art in quality.</para>
     <sect1>
-        <title>Run the package specific unit tests</title>
+        <title>Testcases</title>
+        <para>
+            <!-- Reference to point 6.x and document the results -->
+            To tests this package please follow the examples described in the Usage section, all the
+            tests cases should return the expected results defined at the beginning of each example.
+        </para>
+    </sect1>
+    <sect1>
+        <title>Unit tests</title>
+        <!-- If core files included in this package, there must be covered by unit tests and will be tested.
+             If the packet contains no "core files", this point 9.2 can be removed.
+        -->
+        <para>
+            To ensure the quality of the module, several so-called unit tests were created, to test
+            the functionalities of this module. These unit tests can be run via command line.
+        </para>
+        <para>
+            ATTENTION: Please never run unit tests on a productive system, since the added test
+            data to the system will no longer be removed. Always use a test system.
+        </para>
+        <para>
+            Run the package specific unit tests
+        </para>
         <para>
             To run only the unit test which will be delivered with this package, use the following
             command on the command line:
         </para>
         <para>
             <screen>
-                shell> perl bin/otrs.UnitTest.pl -n $Name
+                shell> perl bin/otrs.UnitTest.pl -n DynamicTicketTemplate
             </screen>
         </para>
-    </sect1>
-    <sect1>
-        <title>Run all available unit tests</title>
+        <para>
+            Run all available unit tests
+        </para>
         <para>
             To run all available unit tests, use the following command on the command line:
         </para>
@@ -168,8 +569,21 @@
 </chapter>
 
 <chapter>
-    <title>Contact</title>
-    <para>Persons involved in the the implementation of the package.</para>
+    <!-- ************* -->
+    <!-- 10. Changelog -->
+    <!-- ************* -->
+    <title>ChangeLog</title>
+    <para>
+    $ChangeLog
+    </para>
+</chapter>
+
+<chapter>
+    <!-- ************ -->
+    <!-- 11. Contacts -->
+    <!-- ************ -->
+    <title>Contacts</title>
+    <para>People who are involved in this implementation.</para>
     <sect1>
         <title>XXXXX</title>
         <para>
@@ -188,27 +602,6 @@
             Technical: Manuel Hecht &lt;dev-support@otrs.com&gt;, Phone +49 (0)6172 681988 0
         </para>
     </sect1>
-</chapter>
-
-<chapter>
-    <title>Manifest</title>
-    <para>
-        This Manifest lists all files (with filename and file permissions) which are included in
-        the package.
-    </para>
-    <sect1>
-        <title>File List</title>
-        <para>
-            $Filelist
-        </para>
-    </sect1>
-</chapter>
-
-<chapter>
-    <title>List of Changes</title>
-    <para>
-        $ChangeLog
-    </para>
 </chapter>
 
 </book>

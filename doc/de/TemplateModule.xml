@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN"
     "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
-<!-- $Id: TemplateModule.xml,v 1.6 2013-03-13 13:51:58 te Exp $ -->
+<!-- $Id: TemplateModule.xml,v 1.7 2013-03-13 14:08:36 te Exp $ -->
 
 <book lang='de'>
 
@@ -47,8 +47,7 @@
         dolor sit amet.
     </para>
     <para>
-        If you have questions regarding this package, please contact your support team
-        (support@otrs.com) for more information.
+        Bei Fragen betreffend dieses Dokumentes, kontaktieren Sie Ihren Support (support@otrs.com) für weitere Informationen.
     </para>
 </preface>
 

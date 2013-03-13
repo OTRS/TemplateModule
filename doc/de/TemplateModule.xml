@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
-<!-- $Id: TemplateModule.xml,v 1.2 2012-10-20 15:07:25 ep Exp $ -->
+<!-- $Id: TemplateModule.xml,v 1.3 2013-03-13 11:55:46 te Exp $ -->
 
 <book lang='de'>
 
@@ -186,7 +186,7 @@
             Accounting: Rene Bakker &lt;sales@otrs.com&gt;, Phone +49 (0)6172 681988 0
         </para>
         <para>
-            Technical: Martin Edenhofer &lt;dev-support@otrs.com&gt;, Phone +49 (0)6172 681988 0
+            Technical: Manuel Hecht &lt;dev-support@otrs.com&gt;, Phone +49 (0)6172 681988 0
         </para>
     </sect1>
 </chapter>

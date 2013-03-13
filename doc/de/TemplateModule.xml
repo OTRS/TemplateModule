@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN"
     "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
-<!-- $Id: TemplateModule.xml,v 1.5 2013-03-13 13:50:41 te Exp $ -->
+<!-- $Id: TemplateModule.xml,v 1.6 2013-03-13 13:51:58 te Exp $ -->
 
 <book lang='de'>
 
@@ -577,14 +577,14 @@
              If the packet contains no "core files", this point 9.2 can be removed.
         -->
         <para>
-            Um die Quallität dieses Moduls zu gewährleisten wurden mehrere so genannter 'UnitTests' erstellt.
+            Um die Quallität dieses Moduls zu gewährleisten wurden mehrere so genannte 'UnitTests' erstellt.
             Diese UnitTests prüfen die Funktionalitäten dieses Moduls auf der Basis von verschiedenen definierten
             Testfällen. Diese UnitTests können über die Kommandozeile gestartet werden.
         </para>
         <para>
-            ACHTUNG: Bitte starten Sie UnitTests nie auf einem Produktivsystem. Dem System hinzugefügten
-            Testdaten werden unter umständen nicht gelöscht. Bitte benutzen Sie daher immer ein Testsystem
-            zum ausführen der UnitTests.
+            ACHTUNG: Bitte starten Sie UnitTests nie auf einem Produktivsystem. Dem System hinzugefügte
+            Testdaten werden unter Umständen nicht gelöscht. Bitte benutzen Sie daher immer ein Testsystem
+            zum Ausführen der UnitTests.
         </para>
         <para>
             Ausführen der paketspezifischen UnitTests

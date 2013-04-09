@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN"
     "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
-<!-- $Id: TemplateModule.xml,v 1.7 2013-03-13 14:08:36 te Exp $ -->
+<!-- $Id: TemplateModule.xml,v 1.8 2013-04-09 08:48:52 te Exp $ -->
 
 <book lang='de'>
 
@@ -550,7 +550,7 @@
     <!-- *********** -->
     <title>Dateiliste</title>
     <!-- Standard text. Don't change this -->
-    <para>Dieses Liste führt alle im Paket befindlichen Dateinamen mit Rechten auf.</para>
+    <para>Diese Liste führt alle im Paket befindlichen Dateinamen mit Rechten auf.</para>
     <para>
        $Filelist
     </para>
@@ -561,7 +561,7 @@
     <!-- 9. Test -->
     <!-- ******* -->
     <title>Tests</title>
-    <para>Die Qualität des Modul wurde auf dem heutigen Stand der Technik getestet.</para>
+    <para>Die Qualität des Modules wurde auf dem heutigen Stand der Technik getestet.</para>
     <sect1>
         <title>Testcases</title>
         <para>
@@ -576,7 +576,7 @@
              If the packet contains no "core files", this point 9.2 can be removed.
         -->
         <para>
-            Um die Quallität dieses Moduls zu gewährleisten wurden mehrere so genannte 'UnitTests' erstellt.
+            Um die Qualität dieses Moduls zu gewährleisten wurden mehrere so genannte 'UnitTests' erstellt.
             Diese UnitTests prüfen die Funktionalitäten dieses Moduls auf der Basis von verschiedenen definierten
             Testfällen. Diese UnitTests können über die Kommandozeile gestartet werden.
         </para>

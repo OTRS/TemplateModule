@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_package version="1.0">
+    <CVS>$Id: TemplateModule.sopm,v 1.1 2013-05-28 16:36:27 te Exp $</CVS>
+    <Name>TemplateModule</Name>
+    <Version>0.0.0</Version>
+    <Framework>3.2.x</Framework>
+    <Vendor>OTRS AG</Vendor>
+    <URL>http://otrs.org/</URL>
+    <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
+    <Description Lang="en">This package is just a template.</Description>
+    <Description Lang="de">Dieses Paket ist nur ein Template.</Description>
+    <Filelist>
+        <File Permission="644" Location="Custom/Kernel/Modules/"/>
+        <File Permission="644" Location="Custom/Kernel/Output/HTML/Standard/"/>
+        <File Permission="644" Location="Custom/Kernel/System/"/>
+        <File Permission="644" Location="Kernel/Config/Files/TemplateModule.xml"/>
+        <File Permission="644" Location="Kernel/Language/de_TemplateModule.pm"/>
+        <File Permission="644" Location="Kernel/Modules/"/>
+        <File Permission="644" Location="Kernel/Output/HTML/"/>
+        <File Permission="644" Location="Kernel/System/"/>
+        <File Permission="644" Location="var/httpd/htdocs/js/"/>
+        <File Permission="644" Location="var/httpd/htdocs/skins/Agent/default/css/"/>
+        <File Permission="644" Location="var/httpd/htdocs/skins/Customer/default/css/"/>
+    </Filelist>
+    <IntroInstall Type="pre" Title="Install Information" Lang="en"><![CDATA[
+        <br/>
+        <strong>WELCOME</strong>
+        <br/>
+        <br/>
+        You are about to install the OTRS package TemplateModule.<br/>
+        <br/>
+        <br/>
+        <strong>ATTENTION</strong>
+        <br/>
+        <br/>
+        Have fun!<br/>
+        <br/>
+        <br/>
+        ((enjoy))<br/>
+        <br/>
+    ]]></IntroInstall>
+    <IntroInstall Type="pre" Title="Installation Information" Lang="de"><![CDATA[
+        <br/>
+        <strong>WILLKOMMEN</strong>
+        <br/>
+        <br/>
+        Sie sind im Begriff das OTRS-Paket TemplateModule zu installieren.<br/>
+        <br/>
+        <br/>
+        <strong>ACHTUNG</strong>
+        <br/>
+        <br/>
+        Viel Spaß!
+        <br/>
+        <br/>
+        ((enjoy))<br/>
+        <br/>
+    ]]></IntroInstall>
+    <IntroInstall Type="post" Title="Installation Information" Lang="en"><![CDATA[
+        <br/>
+        <strong>NOTICE</strong>
+        <br/>
+        <br/>
+        If this system is using mod_perl, please restart the web server after the installation is complete.
+        <br/>
+        <br/>
+        ((enjoy))<br/>
+        <br/>
+    ]]></IntroInstall>
+    <IntroInstall Type="post" Title="Installation Information" Lang="de"><![CDATA[
+        <br/>
+        <strong>HINWEIS</strong>
+        <br/>
+        <br/>
+        Wenn dieses System mod_perl verwendet, starten Sie den Web-Server neu, nachdem die Installation abgeschlossen ist.
+        <br/>
+        <br/>
+        ((enjoy))<br/>
+        <br/>
+    ]]></IntroInstall>
+    <IntroUpgrade Type="pre" Title="Upgrade Information" Lang="en"><![CDATA[
+        <br/>
+        <strong>WELCOME</strong>
+        <br/>
+        <br/>
+        You are about to upgrade the OTRS package TemplateModule.<br/>
+        <br/>
+        <br/>
+        ((enjoy))<br/>
+        <br/>
+    ]]></IntroUpgrade>
+    <IntroUpgrade Type="pre" Title="Upgrade Information" Lang="de"><![CDATA[
+        <br/>
+        <strong>WILLKOMMEN</strong>
+        <br/>
+        <br/>
+        Sie sind im Begriff das OTRS-Paket TemplateModule zu aktualisieren.<br/>
+        <br/>
+        <br/>
+        ((enjoy))<br/>
+        <br/>
+    ]]></IntroUpgrade>
+    <IntroUpgrade Type="post" Title="Upgrade Information" Lang="en"><![CDATA[
+        <br/>
+        <strong>NOTICE</strong>
+        <br/>
+        <br/>
+        If this system is using mod_perl, please restart the web server after the installation is complete.
+        <br/>
+        <br/>
+        ((enjoy))<br/>
+        <br/>
+    ]]></IntroUpgrade>
+    <IntroUpgrade Type="post" Title="Installation Information" Lang="de"><![CDATA[
+        <br/>
+        <strong>HINWEIS</strong>
+        <br/>
+        <br/>
+        Wenn dieses System mod_perl verwendet, starten Sie den Web-Server neu, nachdem die Installation abgeschlossen ist.
+        <br/>
+        <br/>
+        ((enjoy))<br/>
+        <br/>
+    ]]></IntroUpgrade>
+    <IntroUninstall Type="pre" Title="Uninstallation Information" Lang="en"><![CDATA[
+        <br/>
+        <strong>ATTENTION</strong>
+        <br/>
+        <br/>
+        If you uninstall this package, all database tables that were created during installation will be deleted.
+        All data from these tables will be irrevocably lost!
+        <br/>
+        <br/>
+        ((enjoy))<br/>
+        <br/>
+    ]]></IntroUninstall>
+    <IntroUninstall Type="pre" Title="Uninstallation Information" Lang="de"><![CDATA[
+        <br/>
+        <strong>ACHTUNG</strong>
+        <br/>
+        <br/>
+        Bei der Deinstallation werden die von diesem Paket angelegten Datenbank-Tabellen gelöscht.
+        Alle darin enthaltenen Daten gehen unwiderruflich verloren!
+        <br/>
+        <br/>
+        ((enjoy))<br/>
+        <br/>
+    ]]></IntroUninstall>
+</otrs_package>

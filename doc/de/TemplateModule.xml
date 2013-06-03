@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN"
     "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
-<!-- $Id: TemplateModule.xml,v 1.8 2013-04-09 08:48:52 te Exp $ -->
+<!-- $Id: TemplateModule.xml,v 1.9 2013-06-03 09:15:13 rs Exp $ -->
 
 <book lang='de'>
 
@@ -495,7 +495,7 @@
     <!-- ********************************* -->
     <!-- 7. Technical Implematation Detail -->
     <!-- ********************************* -->
-    <title>Technical Implementation Details</title>
+    <title>Details zur technischen Umsetzung</title>
     <!--
         Describe the technical structure of the module and the technical functioning out of a developer's perspective.
             -   Which module layers are used where/as?

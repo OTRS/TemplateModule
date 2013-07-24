@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
 <otrs_config version="1.0" init="Config">
-    <CVS>$Id: DynamicStatsTemplate.xml,v 1.1 2010-05-10 15:14:46 reb Exp $</CVS>
     <ConfigItem Name="Stats::DynamicObjectRegistration###DeveloperManualSample" Required="0" Valid="1">
         <Description Lang="en">Here you can decide if the common stats module may generate stats about the number of default tickets a requester created.</Description>
         <Description Lang="de">Hier können Sie festlegen, ob das Statistik-Modul auch allgemeine Statistiken über die Anzahl von "default"-Tickets, die von Benutzern erzeugt wurden, generieren darf.</Description>

@@ -2,8 +2,6 @@
 # Kernel/System/Ticket/Event/EventModulePostTemplate.pm - event module
 # Copyright (C) 2001-2013 OTRS AG, http://otrs.org/
 # --
-# $Id: EventModulePostTemplate.pm,v 1.2 2013-01-29 09:40:12 mb Exp $
-# --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
@@ -13,9 +11,6 @@ package Kernel::System::Ticket::Event::EventModulePostTemplate;
 
 use strict;
 use warnings;
-
-use vars qw($VERSION);
-$VERSION = qw($Revision: 1.2 $) [1];
 
 sub new {
     my ( $Type, %Param ) = @_;

@@ -2,8 +2,6 @@
 # Ticket/Number/UserRandom.pm - a ticket number generator
 # Copyright (C) 2001-2010 OTRS AG, http://otrs.org/
 # --
-# $Id: UserRandom.pm,v 1.1 2010-05-11 15:40:55 sb Exp $
-# --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
@@ -18,9 +16,6 @@ package Kernel::System::Ticket::Number::UserRandom;
 
 use strict;
 use warnings;
-
-use vars qw($VERSION);
-$VERSION = qw($Revision: 1.1 $) [1];
 
 sub TicketCreateNumber {
     my $Self = shift;

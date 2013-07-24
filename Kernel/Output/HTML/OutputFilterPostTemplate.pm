@@ -2,8 +2,6 @@
 # Kernel/Output/HTML/OutputFilterPostTemplate.pm
 # Copyright (C) 2001-2010 OTRS AG, http://otrs.org/
 # --
-# $Id: OutputFilterPostTemplate.pm,v 1.1 2010-05-10 12:06:29 sb Exp $
-# --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
@@ -18,9 +16,6 @@ use Kernel::System::Encode;
 use Kernel::System::DB;
 use Kernel::System::Time;
 use Kernel::System::Ticket;
-
-use vars qw($VERSION);
-$VERSION = qw($Revision: 1.1 $) [1];
 
 sub new {
     my ( $Type, %Param ) = @_;

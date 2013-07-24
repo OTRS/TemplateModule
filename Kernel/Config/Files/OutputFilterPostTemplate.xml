@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_config version="1.0" init="Changes">
-    <CVS>$Id: OutputFilterPostTemplate.xml,v 1.2 2013-04-04 13:40:12 te Exp $</CVS>
     <ConfigItem Name="Frontend::Output::FilterElementPost###OutputFilterPostTemplate" Required="0" Valid="1">
         <Description Lang="en">Output post-filter to show ticket title.</Description>
         <Description Lang="de">Output Post-Filter zum Anzeigen des Ticket-Titels.</Description>

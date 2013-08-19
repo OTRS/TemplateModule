@@ -62,7 +62,7 @@
          -   possible screenshots
          -   no OTRS terminology like TicketEventModul, PreApplicationModul
     -->
-    <sect1>
+    <section>
         <title>Lorem ipsum dolor sit amet</title>
         <para>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
@@ -150,8 +150,8 @@
                 </listitem>
             </itemizedlist>
         </para>
-    </sect1>
-    <sect1>
+    </section>
+    <section>
         <title>Dynamic Ticket Templates</title>
         <para>
             This feature speed up the creation of new tickets by setting pre-defined texts for
@@ -203,7 +203,7 @@
                 </listitem>
             </itemizedlist>
         </para>
-    </sect1>
+    </section>
 </chapter>
 
 <chapter>
@@ -211,28 +211,28 @@
     <!-- 3. System Reqirement -->
     <!-- ******************** -->
     <title>Systemvoraussetzung</title>
-    <sect1>
+    <section>
         <title>Framework</title>
         <para>Das folgende OTRS Framework wird benötigt</para>
         <para>
         $Framework
         </para>
-    </sect1>
-    <sect1>
+    </section>
+    <section>
         <title>Packages</title>
         <para>Die folgenden Pakete werden benötigt:</para>
         <para>
         $PackageRequired
         </para>
-    </sect1>
-    <sect1>
+    </section>
+    <section>
         <title>Betriebssystem</title>
         <para>Das Paket kann mit folgenden Betriebssystemen verwendet werden:</para>
         <para>
         $OS
         </para>
-    </sect1>
-    <sect1>
+    </section>
+    <section>
         <title>Software von Drittanbietern</title>
         <para>Folgende Software wird für die Benutzung dieses Pakets benötigt:</para>
         <para>
@@ -240,7 +240,7 @@
                 <listitem><para>None.</para></listitem>
             </itemizedlist>
         </para>
-    </sect1>
+    </section>
 </chapter>
 
 <chapter>
@@ -250,7 +250,7 @@
     <title>Installation</title>
     <para>Die folgenden Anweisungen zeigen wie man das Paket installiert. Es gibt grundsätzlich zwei Möglichkeiten.
         Entweder über das Admin-Interface oder über die System-Eingabe.</para>
-    <sect1>
+    <section>
         <title>Admin Interface</title>
         <para>
             Über die folgende URL kann das Paket über das Admin-Interface installiert bzw. wenn nötig auch aktualisiert
@@ -261,8 +261,8 @@
                 http://localhost/otrs/index.pl?Action=AdminPackageManager
             </ulink>
         </para>
-    </sect1>
-    <sect1>
+    </section>
+    <section>
         <title>Kommandozeile</title>
         <para>
             Ist es nicht möglich das Admin-Interface zu benutzen, kann das folgende
@@ -273,7 +273,7 @@
             shell> bin/otrs.PackageManager.pl  -a install -p /path/to/$Name-$Version.opm
         </screen>
         </para>
-    </sect1>
+    </section>
 </chapter>
 
 <chapter>
@@ -290,21 +290,21 @@
         e.g.: Frontend::Module###AgentTicketWorkflow Group: Ticket, Subgroup: Frontend::Agent::ModuleRegistration)
         Description text must be identical with sysconfig description and clearly explained to customers.
     -->
-    <sect1>
+    <section>
         <title>Ticket::DynamicTicketTemplate</title>
         <para>Group: OTRSDynamicTicketTemplates, Subgroup: Core</para>
         <para>
             Allows the use of Dynamic Ticket Templates in Ticket creation screens.
         </para>
-    </sect1>
-    <sect1>
+    </section>
+    <section>
         <title>Ticket::DynamicTicketTemplate::CustomerGroup</title>
         <para> Group: OTRSDynamicTicketTemplates, Subgroup: Core</para>
         <para>
             Allows to assign Dynamic Ticket Templates to Customer Groups.
         </para>
-    </sect1>
-    <sect1>
+    </section>
+    <section>
         <title>Ticket::DynamicTicketTemplate::CustomerGroup::Notify</title>
         <para> Group: OTRSDynamicTicketTemplates, Subgroup: Core</para>
         <para>
@@ -315,7 +315,7 @@
             Note... The notification subject and text can be changed under "Admin" -&gt; "Agent
             Notifications" -&gt; "Agent::MissingCustomerGroupDTTAssignment".
         </para>
-    </sect1>
+    </section>
 </chapter>
 
 <chapter>
@@ -331,7 +331,7 @@
         3.  Submit the data (have a look at screenshot)
         ...
     -->
-    <sect1>
+    <section>
         <title>Post Installation Notes</title>
         <para>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
@@ -359,9 +359,9 @@
         <para>
             Any change in this DTL blocks could affect the package behavior.
         </para>
-    </sect1>
+    </section>
 
-    <sect1>
+    <section>
         <title>ACL based visibility of Dynamic Fields</title>
         <para>
             For this example we are mainly using the example Dropdown DynamicFields "Brand" as well
@@ -485,7 +485,7 @@
         VWModel => 1,...
             </screen>
         </para>
-    </sect1>
+    </section>
 </chapter>
 
 <!-- ***************************************** Technical part ************************************ -->
@@ -561,15 +561,15 @@
     <!-- ******* -->
     <title>Tests</title>
     <para>Die Qualität des Modules wurde auf dem heutigen Stand der Technik getestet.</para>
-    <sect1>
+    <section>
         <title>Testcases</title>
         <para>
             <!-- Reference to point 6.x and document the results -->
             To tests this package please follow the examples described in the Usage section, all the
             tests cases should return the expected results defined at the beginning of each example.
         </para>
-    </sect1>
-    <sect1>
+    </section>
+    <section>
         <title>Unitest</title>
         <!-- If core files included in this package, there must be covered by unit tests and will be tested.
              If the packet contains no "core files", this point 9.2 can be removed.
@@ -607,7 +607,7 @@
                 shell> perl bin/otrs.UnitTest.pl
             </screen>
         </para>
-    </sect1>
+    </section>
 </chapter>
 
 <chapter>
@@ -626,7 +626,7 @@
     <!-- *********** -->
     <title>Kontakt</title>
     <para>Personen welche an der Implementierung des Pakets beteiligt waren.</para>
-    <sect1>
+    <section>
         <title>XXXXX</title>
         <para>
             Accounting: XXX, Phone +49 (0) XXX
@@ -634,8 +634,8 @@
         <para>
             Technical: XXX, Phone +49 (0) XXX
         </para>
-    </sect1>
-    <sect1>
+    </section>
+    <section>
         <title>OTRS AG</title>
         <para>
             Accounting: Rene Bakker &lt;sales@otrs.com&gt;, Phone +49 (0)6172 681988 0
@@ -643,7 +643,7 @@
         <para>
             Technical: Manuel Hecht &lt;dev-support@otrs.com&gt;, Phone +49 (0)6172 681988 0
         </para>
-    </sect1>
+    </section>
 </chapter>
 
 </book>

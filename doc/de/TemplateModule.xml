@@ -492,7 +492,7 @@
 
 <chapter>
     <!-- ********************************* -->
-    <!-- 7. Technical Implematation Detail -->
+    <!-- 7. Technical Implementation Detail -->
     <!-- ********************************* -->
     <title>Details zur technischen Umsetzung</title>
     <!--
@@ -570,7 +570,7 @@
         </para>
     </section>
     <section>
-        <title>Unitest</title>
+        <title>Unit Tests</title>
         <!-- If core files included in this package, there must be covered by unit tests and will be tested.
              If the packet contains no "core files", this point 9.2 can be removed.
         -->

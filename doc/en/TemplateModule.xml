@@ -226,7 +226,7 @@
         </para>
         <para>
         <screen>
-            shell> bin/otrs.PackageManager.pl  -a install -p /path/to/$Name-$Version.opm
+shell> bin/otrs.PackageManager.pl  -a install -p /path/to/$Name-$Version.opm
         </screen>
         </para>
     </section>
@@ -295,6 +295,15 @@
             If the system where this package is installed uses mod_perl it is necessary to restart the
             web server in order to let mod_perl refresh the files and get the updates from this
             package.
+        </para>
+        <para>
+            This is an example how to display screenshots located in a global folder 'images'.
+
+            <mediaobject>
+                <imageobject>
+                    <imagedata scalefit="1" width="100%" contentdepth="100%" fileref="../images/MyExampleScreenshot.png" format="png"/>
+                </imageobject>
+            </mediaobject>
         </para>
         <para>
             The use of custom themes could prevent the correct behavior of this package. If custom

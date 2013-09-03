@@ -270,7 +270,7 @@
         </para>
         <para>
         <screen>
-            shell> bin/otrs.PackageManager.pl  -a install -p /path/to/$Name-$Version.opm
+shell> bin/otrs.PackageManager.pl  -a install -p /path/to/$Name-$Version.opm
         </screen>
         </para>
     </section>
@@ -337,6 +337,15 @@
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
                 ut labore et dolore magna aliquyam erat, sed diam voluptua.  At vero eos et accusam et justo duo
                 dolores et ea rebum.
+        </para>
+        <para>
+            Dies ist ein Beispiel, wie Screenshots angezeigt werden können, welche in einem globalen Verzeichnis 'images' liegen.
+
+            <mediaobject>
+                <imageobject>
+                    <imagedata scalefit="1" width="100%" contentdepth="100%" fileref="../images/MyExampleScreenshot.png" format="png"/>
+                </imageobject>
+            </mediaobject>
         </para>
         <para>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt

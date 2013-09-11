@@ -1,6 +1,6 @@
 # --
 # Kernel/Output/HTML/LinkObjectStdAttachment.pm - layout backend module
-# Copyright (C) 2001-2012 OTRS AG, http://otrs.org/
+# Copyright (C) 2001-2013 OTRS AG, http://otrs.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -143,17 +143,17 @@ sub TableCreateComplex {
 
     # convert the list
     my %LinkList;
-    for my $LinkType ( keys %{ $Param{ObjectLinkListWithData} } ) {
+    for my $LinkType ( sort keys %{ $Param{ObjectLinkListWithData} } ) {
 
         # extract link type List
         my $LinkTypeList = $Param{ObjectLinkListWithData}->{$LinkType};
 
-        for my $Direction ( keys %{$LinkTypeList} ) {
+        for my $Direction ( sort keys %{$LinkTypeList} ) {
 
             # extract direction list
             my $DirectionList = $Param{ObjectLinkListWithData}->{$LinkType}->{$Direction};
 
-            for my $StdAttachmentID ( keys %{$DirectionList} ) {
+            for my $StdAttachmentID ( sort keys %{$DirectionList} ) {
 
                 $LinkList{$StdAttachmentID}->{Data} = $DirectionList->{$StdAttachmentID};
             }
@@ -162,7 +162,7 @@ sub TableCreateComplex {
 
     # create the item list
     my @ItemList;
-    for my $StdAttachmentID ( keys %LinkList ) {
+    for my $StdAttachmentID ( sort keys %LinkList ) {
 
         # extract attachment data
         my $StdAttachment = $LinkList{$StdAttachmentID}{Data};
@@ -270,12 +270,12 @@ sub TableCreateSimple {
     }
 
     my %LinkOutputData;
-    for my $LinkType ( keys %{ $Param{ObjectLinkListWithData} } ) {
+    for my $LinkType ( sort keys %{ $Param{ObjectLinkListWithData} } ) {
 
         # extract link type List
         my $LinkTypeList = $Param{ObjectLinkListWithData}->{$LinkType};
 
-        for my $Direction ( keys %{$LinkTypeList} ) {
+        for my $Direction ( sort keys %{$LinkTypeList} ) {
 
             # extract direction list
             my $DirectionList = $Param{ObjectLinkListWithData}->{$LinkType}->{$Direction};

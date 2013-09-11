@@ -1,6 +1,6 @@
 # --
 # Kernel/System/LinkObject/StdAttachment.pm - to link ticket objects
-# Copyright (C) 2001-2010 OTRS AG, http://otrs.org/
+# Copyright (C) 2001-2013 OTRS AG, http://otrs.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -64,12 +64,12 @@ sub LinkListWithData {
         return;
     }
 
-    for my $LinkType ( keys %{ $Param{LinkList} } ) {
+    for my $LinkType ( sort keys %{ $Param{LinkList} } ) {
 
-        for my $Direction ( keys %{ $Param{LinkList}->{$LinkType} } ) {
+        for my $Direction ( sort keys %{ $Param{LinkList}->{$LinkType} } ) {
 
             ATTACHMENT_ID:
-            for my $StdAttachmentID ( keys %{ $Param{LinkList}->{$LinkType}->{$Direction} } ) {
+            for my $StdAttachmentID ( sort keys %{ $Param{LinkList}->{$LinkType}->{$Direction} } ) {
 
                 # get ticket data
                 my %StdAttachmentData = $Self->{StdAttachmentObject}->StdAttachmentGet(

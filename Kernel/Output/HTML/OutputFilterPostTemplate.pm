@@ -52,7 +52,7 @@ sub Run {
 
     # get valid modules
     my $ValidTemplates = $Self->{ConfigObject}->Get('Frontend::Output::FilterElementPost')
-        ->{'OutputFilterPostTemplate'}->{Modules};
+        ->{'OutputFilterPostTemplate'}->{Templates};
 
     # apply only if template is valid in config
     return 1 if !$ValidTemplates->{$TemplateName};

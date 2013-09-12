@@ -51,7 +51,7 @@ sub Run {
 
     # get valid modules
     my $ValidTemplates = $Self->{ConfigObject}->Get('Frontend::Output::FilterElementPre')
-        ->{'OutputFilterPreTemplate'}->{Modules};
+        ->{'OutputFilterPreTemplate'}->{Templates};
 
     # apply only if template is valid in config
     return 1 if !$ValidTemplates->{$TemplateName};
@@ -65,7 +65,17 @@ END
 
     # display item
     my $Search = '([ \t]+</table>(?:(?!</table>).)+?<!-- dtl:block:CustomerTable -->)';
-    ${ $Param{Data} } =~ s{$Search}{$ItemDisplay$1}ms;
+
+    # check if the regex match
+    if ( ${ $Param{Data} } =~ m{$Search}ms) {
+        ${ $Param{Data} } =~ s{$Search}{$ItemDisplay$1}ms;
+    }
+    else {
+        $Self->{LogObject}->Log(
+            Priority => 'error',
+            Message  => "OutputFilterPreTemplate doesn't match",
+        );
+    }
 
     return 1;
 }

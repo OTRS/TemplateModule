@@ -97,6 +97,18 @@ sub new {
     return $Self;
 }
 
+sub GetObjectBehaviours {
+    my ( $Self, %Param ) = @_;
+
+    my %Behaviours = (
+
+        # Does the stat return matrix data that can be displayed as a chart?
+        ProvidesDashboardWidget => 1,
+    );
+
+    return %Behaviours;
+}
+
 =item Param()
 
 Get all parameters a user can specify.

@@ -45,6 +45,18 @@ sub GetObjectName {
     return 'Sample Statistics';
 }
 
+sub GetObjectBehaviours {
+    my ( $Self, %Param ) = @_;
+
+    my %Behaviours = (
+
+        # Does the stat return matrix data that can be displayed as a chart?
+        ProvidesDashboardWidget => 0,
+    );
+
+    return %Behaviours;
+}
+
 sub GetObjectAttributes {
     my ( $Self, %Param ) = @_;
 

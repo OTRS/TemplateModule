@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_config version="1.0" init="Changes">
     <ConfigItem Name="Frontend::Output::FilterText###OutputFilterTextTemplate" Required="0" Valid="1">
-        <Description Lang="en">Output content-filter to modify text items.</Description>
-        <Description Lang="de">Output Content-Filter zum Verändern von Textstücken.</Description>
+        <Description Translatable="1">Output content-filter to modify text items.</Description>
         <Group>OutputFilterTextTemplate</Group>
         <SubGroup>OutputFilter</SubGroup>
         <Setting>

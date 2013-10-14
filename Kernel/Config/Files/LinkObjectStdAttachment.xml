@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="iso-8859-1" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <otrs_config version="1.0" init="Config">
     <ConfigItem Name="LinkObject::PossibleLink###4000" Required="0" Valid="1">
-        <Description Lang="en">This setting defines that a 'Ticket' object can be linked with 'StdAttachment' objects using the 'Normal' link type.</Description>
-        <Description Lang="de">Definiert, dass ein 'Ticket'-Objekt mit dem Linktyp 'Normal' mit 'StdAttachment'-Objekten verlinkt werden kann.</Description>
+        <Description Translatable="1">This setting defines that a 'Ticket' object can be linked with 'StdAttachment' objects using the 'Normal' link type.</Description>
         <Group>Framework</Group>
         <SubGroup>Core::LinkObject</SubGroup>
         <Setting>

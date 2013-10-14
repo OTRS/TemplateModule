@@ -67,7 +67,7 @@ END
     my $Search = '([ \t]+</table>(?:(?!</table>).)+?<!-- dtl:block:CustomerTable -->)';
 
     # check if the regex match
-    if ( ${ $Param{Data} } =~ m{$Search}ms) {
+    if ( ${ $Param{Data} } =~ m{$Search}ms ) {
         ${ $Param{Data} } =~ s{$Search}{$ItemDisplay$1}ms;
     }
     else {

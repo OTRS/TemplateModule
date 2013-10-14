@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_config version="1.0" init="Changes">
     <ConfigItem Name="Ticket::EventModulePost###EventModulePostTemplate" Required="0" Valid="1">
-        <Description Lang="en"></Description>
-        <Description Lang="de"></Description>
+        <Description Translatable="1"></Description>
         <Group>EventModulePostTemplate</Group>
         <SubGroup>EventModule</SubGroup>
         <Setting>

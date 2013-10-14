@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_config version="1.0" init="Changes">
     <ConfigItem Name="Frontend::Output::FilterElementPost###OutputFilterPostTemplate" Required="0" Valid="1">
-        <Description Lang="en">Output post-filter to show ticket title.</Description>
-        <Description Lang="de">Output Post-Filter zum Anzeigen des Ticket-Titels.</Description>
+        <Description Translatable="1">Output post-filter to show ticket title.</Description>
         <Group>OutputFilterPostTemplate</Group>
         <SubGroup>OutputFilter</SubGroup>
         <Setting>

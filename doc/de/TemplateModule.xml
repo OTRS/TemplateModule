@@ -280,10 +280,11 @@ shell> bin/otrs.PackageManager.pl  -a install -p /path/to/$Name-$Version.opm
     <!-- **************** -->
     <!-- 5. Configuration -->
     <!-- **************** -->
+    <!-- You can build this chapter by running module-tools/Config2Docbook.pl -->
     <title>Konfiguration</title>
     <para>
-            Folgende Konfigurations Optionen können für dieses Paket verändert werden.
-
+        Folgende Konfigurations Optionen können für dieses Paket verändert werden.
+        Alle anderen Konfigurationen welche unter SysConfig -> Paketname zu finden sind, werden für die korrekte Funktionalität benötigt und sollten im normalen Betrieb nicht verändert werden.
     </para>
     <!--
         List of all added, modified or removed config options in the package.

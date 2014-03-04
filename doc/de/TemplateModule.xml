@@ -572,11 +572,9 @@ shell> bin/otrs.PackageManager.pl  -a install -p /path/to/$Name-$Version.opm
     <title>Tests</title>
     <para>Die Qualität des Modules wurde auf dem heutigen Stand der Technik getestet.</para>
     <section>
-        <title>Testcases</title>
+        <title>Testfälle</title>
         <para>
-            <!-- Reference to point 6.x and document the results -->
-            To tests this package please follow the examples described in the Usage section, all the
-            tests cases should return the expected results defined at the beginning of each example.
+            Um dieses Modul zu testen folgen Sie bitte den Beispielen wie im Bereich Bedienung beschrieben.
         </para>
     </section>
     <section>

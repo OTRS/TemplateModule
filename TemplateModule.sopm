@@ -9,17 +9,31 @@
     <Description Lang="en">This package is just a template.</Description>
     <Description Lang="de">Dieses Paket ist nur ein Template.</Description>
     <Filelist>
-        <File Permission="644" Location="Custom/Kernel/Modules/"/>
-        <File Permission="644" Location="Custom/Kernel/Output/HTML/Standard/"/>
-        <File Permission="644" Location="Custom/Kernel/System/"/>
-        <File Permission="644" Location="Kernel/Config/Files/TemplateModule.xml"/>
+        <File Permission="644" Location="Kernel/System/HTMLUtilsRedefined.pm"/>
+        <File Permission="644" Location="Kernel/System/TemplateModule.pm"/>
+        <File Permission="644" Location="Kernel/System/Ticket/Event/EventModulePostTemplate.pm"/>
+        <File Permission="644" Location="Kernel/System/Ticket/Acl/TemplateModule.pm"/>
+        <File Permission="644" Location="Kernel/System/Ticket/Number/UserRandom.pm"/>
+        <File Permission="644" Location="Kernel/System/LinkObject/StdAttachment.pm"/>
+        <File Permission="644" Location="Kernel/System/Stats/Static/StaticStatsTemplate.pm"/>
+        <File Permission="644" Location="Kernel/System/Stats/Dynamic/DynamicStatsTemplate.pm"/>
+        <File Permission="644" Location="Kernel/Config/Files/OutputFilterTextTemplate.xml"/>
+        <File Permission="644" Location="Kernel/Config/Files/DynamicStatsTemplate.xml"/>
+        <File Permission="644" Location="Kernel/Config/Files/OutputFilterPreTemplate.xml"/>
+        <File Permission="644" Location="Kernel/Config/Files/LinkObjectStdAttachment.xml"/>
+        <File Permission="644" Location="Kernel/Config/Files/TicketNumberGenerator.xml"/>
+        <File Permission="644" Location="Kernel/Config/Files/OutputFilterContentTemplate.xml"/>
+        <File Permission="644" Location="Kernel/Config/Files/EventModulePostTemplate.xml"/>
+        <File Permission="644" Location="Kernel/Config/Files/HTMLUtilsRedefined.xml"/>
+        <File Permission="644" Location="Kernel/Config/Files/OutputFilterPostTemplate.xml"/>
         <File Permission="644" Location="Kernel/Language/de_TemplateModule.pm"/>
-        <File Permission="644" Location="Kernel/Modules/"/>
-        <File Permission="644" Location="Kernel/Output/HTML/"/>
-        <File Permission="644" Location="Kernel/System/"/>
-        <File Permission="644" Location="var/httpd/htdocs/js/"/>
-        <File Permission="644" Location="var/httpd/htdocs/skins/Agent/default/css/"/>
-        <File Permission="644" Location="var/httpd/htdocs/skins/Customer/default/css/"/>
+        <File Permission="644" Location="Kernel/Output/HTML/OutputFilterTextTemplate.pm"/>
+        <File Permission="644" Location="Kernel/Output/HTML/OutputFilterContentTemplate.pm"/>
+        <File Permission="644" Location="Kernel/Output/HTML/OutputFilterPostTemplate.pm"/>
+        <File Permission="644" Location="Kernel/Output/HTML/LinkObjectStdAttachment.pm"/>
+        <File Permission="644" Location="Kernel/Output/HTML/OutputFilterPreTemplate.pm"/>
+        <File Permission="644" Location="Kernel/Output/HTML/OutputFilterTemplateModule.pm"/>
+        <File Permission="644" Location="scripts/tests/TemplateModule.t"/>
     </Filelist>
     <IntroInstall Type="pre" Title="Install Information" Lang="en"><![CDATA[
         <br/>

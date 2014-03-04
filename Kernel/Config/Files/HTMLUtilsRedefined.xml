@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_config version="1.0" init="Changes">
+    <ConfigItem Name="Ticket::CustomModule###100-HTMLUtilsRedefined" Required="1" Valid="1">
+        <Description Translatable="1">Overloads (redefines) existing functions in Kernel::System:::HTMLUtils to add customer output.</Description>
+        <Group>Customer</Group>
+        <SubGroup>Core::Ticket</SubGroup>
+        <Setting>
+            <String Regex="">Kernel::System::HTMLUtilsRedefined</String>
+        </Setting>
+    </ConfigItem>
+</otrs_config>

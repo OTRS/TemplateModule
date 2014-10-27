@@ -46,7 +46,8 @@
         dolor sit amet.
     </para>
     <para>
-        Bei Fragen betreffend dieses Dokumentes, kontaktieren Sie Ihren Support (support@otrs.com) für weitere Informationen.
+        Sollten Sie Fragen zu diesem Dokument haben oder weitere Informationen benötigen, loggen Sie sich bitte mit Ihrer OTRS-ID in unser Kundenportal unter portal.otrs.com ein und eröffnen Sie ein Ticket. Sie haben noch keine OTRS-ID? Registrieren Sie sich
+        <ulink url="https://portal.otrs.com/otrs/customer.pl#Signup">hier kostenlos</ulink>.
     </para>
 </preface>
 
@@ -344,7 +345,7 @@ shell> bin/otrs.PackageManager.pl  -a install -p /path/to/$Name-$Version.opm
 
             <mediaobject>
                 <imageobject>
-                    <imagedata scalefit="1" width="100%" contentdepth="100%" fileref="../images/MyExampleScreenshot.png" format="png"/>
+                    <imagedata scalefit="1" width="100%" contentdepth="100%" fileref="../images/MyExampleScreenshot.png" format="PNG"/>
                 </imageobject>
             </mediaobject>
         </para>

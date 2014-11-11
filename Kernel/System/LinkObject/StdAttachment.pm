@@ -83,8 +83,7 @@ sub LinkListWithData {
                 }
 
                 # add ticket data
-                $Param{LinkList}->{$LinkType}->{$Direction}->{$StdAttachmentID}
-                    = \%StdAttachmentData;
+                $Param{LinkList}->{$LinkType}->{$Direction}->{$StdAttachmentID} = \%StdAttachmentData;
             }
         }
     }

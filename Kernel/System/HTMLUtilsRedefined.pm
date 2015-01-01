@@ -1,6 +1,6 @@
 # --
 # Kernel/System/HTMLUtilsRedefined.pm - HTML utils custom changes
-# Copyright (C) 2001-2014 OTRS AG, http://otrs.com/
+# Copyright (C) 2001-2015 OTRS AG, http://otrs.com/
 # --
 # $origin: https://github.com/OTRS/otrs/blob/77149f6f5210094eff910cfea2f6009f603221ce/Kernel/System/HTMLUtils.pm
 # --

@@ -19,7 +19,6 @@
         <File Permission="644" Location="Kernel/System/Stats/Dynamic/DynamicStatsTemplate.pm"/>
         <File Permission="644" Location="Kernel/Config/Files/OutputFilterTextTemplate.xml"/>
         <File Permission="644" Location="Kernel/Config/Files/DynamicStatsTemplate.xml"/>
-        <File Permission="644" Location="Kernel/Config/Files/OutputFilterPreTemplate.xml"/>
         <File Permission="644" Location="Kernel/Config/Files/LinkObjectStdAttachment.xml"/>
         <File Permission="644" Location="Kernel/Config/Files/TicketNumberGenerator.xml"/>
         <File Permission="644" Location="Kernel/Config/Files/OutputFilterContentTemplate.xml"/>
@@ -31,7 +30,6 @@
         <File Permission="644" Location="Kernel/Output/HTML/OutputFilterContentTemplate.pm"/>
         <File Permission="644" Location="Kernel/Output/HTML/OutputFilterPostTemplate.pm"/>
         <File Permission="644" Location="Kernel/Output/HTML/LinkObjectStdAttachment.pm"/>
-        <File Permission="644" Location="Kernel/Output/HTML/OutputFilterPreTemplate.pm"/>
         <File Permission="644" Location="Kernel/Output/HTML/OutputFilterTemplateModule.pm"/>
         <File Permission="644" Location="scripts/tests/TemplateModule.t"/>
     </Filelist>

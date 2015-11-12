@@ -67,7 +67,7 @@
     <section>
         <title>Lorem ipsum dolor sit amet</title>
         <para>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
                 ut labore et dolore magna aliquyam erat, sed diam voluptua.  At vero eos et accusam et justo duo
                 dolores et ea rebum.
         </para>
@@ -91,57 +91,9 @@
                                 New Email Ticket
                             </para>
                         </listitem>
-                    </itemizedlist>
-                </listitem>
-                <listitem>
-                    <para>
-                        Customer Interface:
-                    </para>
-                    <itemizedlist mark="round">
                         <listitem>
                             <para>
-                                New Ticket
-                            </para>
-                        </listitem>
-                    </itemizedlist>
-                </listitem>
-            </itemizedlist>
-        </para>
-    </section>
-    <section>
-        <title>Dynamic Ticket Templates</title>
-        <para>
-            This feature speed up the creation of new tickets by setting pre-defined texts for
-            subject and body, and the selection of the Dynamic Fields to be shown and which ones
-            should be marked as required.
-        </para>
-        <para>
-            In the customer interface the templates can also pre-fill the Ticket Type and Service by
-            activating the CustomerGroup setting (explained in the following sections).
-        </para>
-        <para>
-            This feature can work cooperatively with OTRSTicketWorkflow or OTRSTicketWorkflowITSM
-            Feature Add-on packages by integrating defined Ticket Workflows into a template and
-            trigger them automatically when the ticket is created.
-        </para>
-        <para>
-            The screens where is feature is available are:
-        </para>
-        <para>
-            <itemizedlist mark="round">
-                <listitem>
-                    <para>
-                        Agent Interface:
-                    </para>
-                    <itemizedlist mark="round">
-                        <listitem>
-                            <para>
-                                New Phone Ticket
-                            </para>
-                        </listitem>
-                        <listitem>
-                            <para>
-                                New Email Ticket
+                                Ticket Close
                             </para>
                         </listitem>
                     </itemizedlist>
@@ -164,29 +116,29 @@
 </chapter>
 
 <chapter>
-    <!-- ******************** -->
+    <!-- ********************* -->
     <!-- 3. System Reqirements -->
-    <!-- ******************** -->
+    <!-- ********************* -->
     <title>System Requirements</title>
     <section>
         <title>Framework</title>
         <para>The following OTRS framework is required:</para>
         <para>
-        $Framework
+            $Framework
         </para>
     </section>
     <section>
         <title>Packages</title>
         <para>The following packages are required:</para>
         <para>
-        $PackageRequired
+            $PackageRequired
         </para>
     </section>
     <section>
         <title>Operating System</title>
         <para>This package requires one of the following operating systems:</para>
         <para>
-        $OS
+            $OS
         </para>
     </section>
     <section>
@@ -194,7 +146,9 @@
         <para>This third party software is required to use this package:</para>
         <para>
             <itemizedlist>
-                <listitem><para>None.</para></listitem>
+                <listitem>
+                    <para>None</para>
+                </listitem>
             </itemizedlist>
         </para>
     </section>
@@ -205,7 +159,9 @@
     <!-- 4. Installation -->
     <!-- *************** -->
     <title>Installation</title>
-    <para>The following instructions explain how to install the package.</para>
+    <para>
+        The following instructions explain how to install the package. There are two possibilities.
+    </para>
     <section>
         <title>Admin Interface</title>
         <para>
@@ -218,6 +174,7 @@
             </ulink>
         </para>
     </section>
+    <!-- OTRS <= 4 -->
     <section>
         <title>Command Line</title>
         <para>
@@ -226,11 +183,27 @@
             instead.
         </para>
         <para>
-        <screen>
-shell> bin/otrs.PackageManager.pl  -a install -p /path/to/$Name-$Version.opm
-        </screen>
+            <screen>
+shell> bin/otrs.PackageManager.pl -a install -p /path/to/$Name-$Version.opm
+            </screen>
         </para>
     </section>
+    <!-- OTRS <= 4 -->
+    <!-- OTRS >= 5 -->
+    <section>
+        <title>Command Line</title>
+        <para>
+            Whenever you cannot use the Admin Interface for whatever reason,
+            you may use the following command line tool (&quot;bin/otrs.Console.pl&quot;)
+            instead.
+        </para>
+        <para>
+            <screen>
+shell> bin/otrs.Console.pl Admin::Package::Install /path/to/$Name-$Version.opm
+            </screen>
+        </para>
+    </section>
+    <!-- OTRS >= 5 -->
 </chapter>
 
 <chapter>
@@ -241,8 +214,7 @@ shell> bin/otrs.PackageManager.pl  -a install -p /path/to/$Name-$Version.opm
     <title>Configuration</title>
     <para>
         The following list of configuration options can be changed for this package.
-        The rest of the settings found in SysConfig -> OTRSTicketMaskExtensions and SysConfig ->
-        OTRSDynamicTicketTemplates are required configurations that must not be changed.
+        The rest of the settings found in SysConfig -> Packagename are required configurations that must not be changed.
     </para>
     <!--
         List of all added, modified or removed config options in the package.
@@ -293,9 +265,9 @@ shell> bin/otrs.PackageManager.pl  -a install -p /path/to/$Name-$Version.opm
     <section>
         <title>Post Installation Notes</title>
         <para>
-            If the system where this package is installed uses mod_perl it is necessary to restart the
-            web server in order to let mod_perl refresh the files and get the updates from this
-            package.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                ut labore et dolore magna aliquyam erat, sed diam voluptua.  At vero eos et accusam et justo duo
+                dolores et ea rebum.
         </para>
         <para>
             This is an example how to display screenshots located in a global folder 'images'.
@@ -307,10 +279,9 @@ shell> bin/otrs.PackageManager.pl  -a install -p /path/to/$Name-$Version.opm
             </mediaobject>
         </para>
         <para>
-            The use of custom themes could prevent the correct behavior of this package. If custom
-            themes are used make sure that the Dynamic Fields for at least AgentTicketPhone,
-            AgentTicketEmail and CustomerTicketMessage screens are contained into a single DTL
-            block like the following:
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                ut labore et dolore magna aliquyam erat, sed diam voluptua.  At vero eos et accusam et justo duo
+                dolores et ea rebum.
         </para>
         <para>
             <programlisting><![CDATA[
@@ -329,140 +300,14 @@ shell> bin/otrs.PackageManager.pl  -a install -p /path/to/$Name-$Version.opm
             Any change in this DTL blocks could affect the package behavior.
         </para>
     </section>
-
-    <section>
-        <title>ACL based visibility of Dynamic Fields</title>
-        <para>
-            For this example we are mainly using the example Dropdown DynamicFields "Brand" as well
-            as "VWModel".
-        </para>
-        <para>
-            Both fields needs to activated in the Dynamic Fields setting for each screen in the
-            sysconfig for example:
-        </para>
-        <para>
-            <screen>
-        Ticket::Frontend::AgentTicketPhone###DynamicField:
-
-        Key                     Content
-
-        Brand                     1
-        VWModel                   1
-        VWProductionFacility      1
-        PeugeotModel              1
-        PeugeotProductionFacility 1
-        Accessories               1
-        Fuel                      1
-        Remarks                   1
-        RegistationDate           1
-        InvoiceDate               1
-            </screen>
-        </para>
-        <para>
-            "Brand" stands for car manufacturer, and contains the following values:
-        </para>
-        <para>
-            <screen>
-        1: VW
-        2: Peugeot
-            </screen>
-        </para>
-        <para>"VWModel" holds a list of VW Models:</para>
-        <para>
-            <screen>
-        1: Up
-        2: Polo
-        3: Golf
-        4: T5
-            </screen>
-        </para>
-        <para>Goal:</para>
-        <para>
-            <itemizedlist>
-                <listitem>
-                    <para>
-                        Step 1: If we select Brand "VW", all Dynamic Fields should be hidden and
-                        just "VWModel" is displayed.
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>
-                        Step 2: If we select VWModel "Up" all Dynamic Fields should be displayed
-                        except for the fields "PeugeotModel" and "PeugeotProductionFacility".
-                    </para>
-                </listitem>
-            </itemizedlist>
-        </para>
-        <para>
-            In the following listing you can see the ACL rules for the above example.
-        </para>
-        <para>
-            Note... You can copy and paste this ACL rules into your Config.pm file to follow the
-            example. But remember to delete or comment them if you will not use them anymore.
-        </para>
-        <para>Detailed explanation:</para>
-        <para>
-            <screen>
-        DynamicField_Brand => [1]
-            </screen>
-        </para>
-        <para>
-            The condition for this ACL rule. If "DanymicField_Brand" Key 1 is selected, the rule
-            will come into action. The Array contains the used PossibleValues keys found in your
-            database inside the dynamic_field table in column "config". In this example it's a
-            Dynamic Field of type "Dropdown".
-        </para>
-        <para>
-            <screen>
-        Form => {
-            </screen>
-        </para>
-        <para>
-            This Package introduces the "Form" key as new option in the "Possible" ACL Hash.
-            "Form" holds the configuration for the visibility of Dynamic Fields.
-        </para>
-        <para>
-            <screen>
-        VWModel => 1,...
-            </screen>
-        </para>
-        <para>
-            These shows the Dynamic Fields that should be visible / invisible. (1 = visible,
-            0 = invisible). In this example the DynamicFields VWModel as well as
-            VWProductionFacility are visible. All other Dynamic Fields will be hidden
-            (PeugeotModel, PeugeotProductionFacility,...).
-        </para>
-        <para>
-            <screen>
-        $Self->{TicketAcl}->{'ACL-VW-Up'}
-            </screen>
-        </para>
-        <para>The second ACL Rule</para>
-        <para>
-                <screen>
-        DynamicField_Brand => [1],
-        DynamicField_VWModel => [1]
-                </screen>
-        </para>
-        <para>
-            In this example two conditions should be met DynamicField_Brand has to be 1 and
-            DynamicField_VWModel has to be 1 too. for this rule to come into action. E.g. it will
-            be triggered if user selects Brand "VW" AND VWModel "Up".
-        </para>
-        <para>
-            <screen>
-        VWModel => 1,...
-            </screen>
-        </para>
-    </section>
 </chapter>
 
 <!-- ***************************************** Technical part ************************************ -->
 
 <chapter>
-    <!-- ********************************* -->
-    <!-- 7. Technical Implementation Detail -->
-    <!-- ********************************* -->
+    <!-- *********************************** -->
+    <!-- 7. Technical Implementation Details -->
+    <!-- *********************************** -->
     <title>Technical Implementation Details</title>
     <!--
         Describe the technical structure of the module and the technical functioning out of a developer's perspective.
@@ -482,34 +327,6 @@ shell> bin/otrs.PackageManager.pl  -a install -p /path/to/$Name-$Version.opm
         There are two Output Filters that modifies the Agent and Customer screens to provide the
         required enhancements on the fly (without the need of modify the .dtl files).
     </para>
-    <!--
-            OK, so far for the users and now for the developers underneath us:
-            Functionality:
-            3 Main Parts:
-        1. Extension for Ticket.pm's TicketAcl sub (Kernel/System/Ticket/OTRSTIcketMaskExtensions.pm):
-            Here the ObjectVariable "TicketAclFormData" gets populated after an ACL check, holding the 1 and 0 configs as configured in the ACL rule that was triggered.
-        2. Custom/Kernel/Modules/AgentTicket ActionCommon/Email/Phone/PhoneCommon .pm
-            In every .pm where we do the acl checks on dynamic fields, fetch Ticket.pm's new "TicketAclFormData" result and render dynamic field's HTML.
-            For Invisible DynamicFields, they get rendered too but as empty div's.
-        3. var/httpd/htdocs/js/Core.AJAX.OTRSTIcketMaskExtensions.js
-            Here the main work happens. After changing Ajax updateable fields,
-            the Perl backend gets called, returns a list of to be displayed dynamicfields as well as their html code.
-            A loop through the DynamicFields populates the empty divs that should get shown by newly triggered ACL rules
-            as well as now to be hidden DynamicFields's divs content gets deleted.
-
-            1 small side Part:
-        To get emptyDiv's we need the Kernel/Output/HTML/OutputFilterPreOTRSTicketMaskExtensions.pm to regex in the following new dtl block:
-        dtl:block:ContentDynamicField
-        inside the standard otrs 3.1 block:
-        dtl:block:DynamicField
-
-        this way the Custom/kernel/Module/Agent....pm's can render the dtl:block:ContentDynamicField only if they concerning DynamicField
-        should be visible.
-
-            Big thx to:
-            - Martin Gruner for thinking through the whole thing with me
-            - Carlos Rodriguez for the implementation of the huge framework side necessities to make this module possible
-        -->
 </chapter>
 
 <chapter>
@@ -529,7 +346,7 @@ shell> bin/otrs.PackageManager.pl  -a install -p /path/to/$Name-$Version.opm
     <!-- 9. Test -->
     <!-- ******* -->
     <title>Tests</title>
-    <para>This module has been tested on the current state of the art in quality.</para>
+    <para>This module has been quality assured according to the current OTRS guidelines.</para>
     <section>
         <title>Testcases</title>
         <para>
@@ -539,7 +356,7 @@ shell> bin/otrs.PackageManager.pl  -a install -p /path/to/$Name-$Version.opm
         </para>
     </section>
     <section>
-        <title>Unit tests</title>
+        <title>Unit Tests</title>
         <!-- If core files included in this package, there must be covered by unit tests and will be tested.
              If the packet contains no "core files", this point 9.2 can be removed.
         -->
@@ -559,9 +376,16 @@ shell> bin/otrs.PackageManager.pl  -a install -p /path/to/$Name-$Version.opm
             command on the command line:
         </para>
         <para>
+            <!-- OTRS <= 4 -->
             <screen>
-                shell> perl bin/otrs.UnitTest.pl -n DynamicTicketTemplate
+shell> perl bin/UnitTest.pl -n $Name
             </screen>
+            <!-- OTRS <= 4 -->
+            <!-- OTRS >= 5 -->
+            <screen>
+shell> perl bin/otrs.Console.pl Dev::UnitTest::Run --test $Name
+            </screen>
+            <!-- OTRS >= 5 -->
         </para>
         <para>
             Run all available unit tests
@@ -570,9 +394,16 @@ shell> bin/otrs.PackageManager.pl  -a install -p /path/to/$Name-$Version.opm
             To run all available unit tests, use the following command on the command line:
         </para>
         <para>
+            <!-- OTRS <= 4 -->
             <screen>
-                shell> perl bin/otrs.UnitTest.pl
+shell> perl bin/UnitTest.pl
             </screen>
+            <!-- OTRS <= 4 -->
+            <!-- OTRS >= 5 -->
+            <screen>
+shell> perl bin/otrs.Console.pl Dev::UnitTest::Run
+            </screen>
+            <!-- OTRS >= 5 -->
         </para>
     </section>
 </chapter>
